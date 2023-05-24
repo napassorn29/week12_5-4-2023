@@ -310,6 +310,35 @@ void EEPROMReadExample(uint8_t *Rdata,uint16_t len)
 	}
 }
 
+//void ReadEEPROMSeq(uint16_t MemAddr, uint8_t *Rdata, uint16_t len, uint8_t *Trigger)
+//{
+//	static enum
+//	{
+//		State_Idle,
+//		State_address_frame,
+//		State_dataFrame,
+//	} State = State_Idle;
+//	if(hi2c1.State == HAL_I2C_STATE_READY)
+//	{
+//		switch(State)
+//		{
+//		case State_Idle:
+//			if(*Trigger)
+//			{
+//				State = State_address_frame;
+//			}
+//			break;
+//		case State_address_frame:
+//		{
+//			static uint8_t MemoryAddress[2];
+//			MemoryAddress[0] = (MemAddr>>8)&0xFF;
+//			MemoryAddress[1] = (MemAddr) & 0xFF;
+//
+//		}
+//		}
+//	}
+//}
+
 /* USER CODE END 4 */
 
 /**
